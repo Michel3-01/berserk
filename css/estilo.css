@@ -1,0 +1,100 @@
+@charset "UTF-8";
+:root{
+    --cor01:#9E63BA;
+    --cor02:#807087;
+    --cor03:#5D3A6E;
+    --cor04:#B09BBA;
+    --cor05:#321F3B;
+    --cor06:#6E2343;
+    --cor07:#BA1E38;
+
+    --font_padrao:'Roboto', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+@font-face {
+    font-family:'Berserk';
+    src: url('../fonts/Halloween\ Morning.ttf') format('truetype');
+}
+@font-face {
+    font-family:'Berserk02';
+    src: url('../fonts/SpookyMonsta.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Berserk03';
+    src: url('../fonts/Cute\ Monster.ttf') format('truetype');
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--cor04);
+    font-family: var(--font_padrao);
+}
+header{
+    background-image:linear-gradient( to bottom,var(--cor05),var(--cor06),var(--cor07));
+    padding: 40px;
+}
+header h1{
+    color: white;
+    text-align: center;
+    font-family: 'Berserk';
+    font-size: 3.5em;
+    font-weight: normal;
+}
+header p{
+    color: white;
+    text-align: center;
+    font-size: 1.3em;
+}
+nav{
+    background-color: var(--cor07);
+    padding: 5px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: bold;
+}
+nav a:hover{
+    color: var(--cor07);
+    background-color: var(--cor05);
+    padding: 10px;
+    border-radius: 10px;
+}
+main{
+    background-color: white;
+    max-width:1000px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.544);
+}
+main h2{
+    font-family: 'Berserk03';
+    font-weight: normal;
+    font-size: 2.5em;
+    margin-top: 10px;
+}
+main p{
+    margin-top: 10px;
+    line-height: 1.8em;
+    text-align: justify;
+    margin: 30px 10px;
+    text-indent: 30px;
+}
+main > article > div > img{
+    width: 70%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.419);
+}
+div.imagem{
+    background-image:linear-gradient(to right, var(--cor06),var(--cor03),transparent);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+footer{
+    background-color: var(--cor05);
+    color: white;
+    text-align: center;
+}
